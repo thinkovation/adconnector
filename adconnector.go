@@ -14,7 +14,6 @@ func main() {
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
-	fmt.Println("Hello World!")
 
 	boo, err := adapi.NewADHelperWithClientSecret(os.Getenv("TENANT_ID"), os.Getenv("CLIENT_ID"), os.Getenv("CLIENT_SECRET"))
 	if err != nil {
